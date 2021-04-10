@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+h2 {
+	font-size: 10vw;
+}
+.mobile_hidden {
+	display: block;
+}
+
+/* hamburgerBTN */
+.hamburger {
+	right: 20px;
+	top: 20px;
+}
+
+/* hamburgerNAVI */
+.global_nav {
+  padding: 200px 50px 200px 0;
+	font-size: 5vw;
+  line-height: 2;
+}
+
+/* header */
+header {
+  height: 100vh;
+}
+.title {
+  top: 35%;
+  left: 50px;
+}
+.title p {
+  margin-bottom: 8px;
+  font-size: 6vw;
+}
+.title h1 {
+  font-size: 10vw;
+}
+.title .thin {
+  font-size: 10.5vw;
+}
+.head_img {
+  width: 70%;
+	left: 15%;
+}
+
+/* main */
+.about_img {
+	width: 30%;
+}
+.about_info h3 {
+	font-size: 4vw;
+}
+.about_info p {
+	font-size: 2.5vw;
+}
+.about_text dt {
+	font-size: 2.5vw;
+}
+.about_text dd {
+	font-size: 2.2vw;
+}
+.history_text p {
+	font-size: 2.2vw;
+}
+#works {
+  margin-bottom: 150px;
+}
+.works_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.works_inner {
+	width: 45%;
+}
+.works_inner h3 {
+	font-size: 2.2vw;
+}
+.works_inner p {
+	font-size: 2.2vw;
+}
+.works_inner p:last-child {
+	font-size: 1.5vw;
+}
+.more_btn a {
+	font-size: 3vw;
+}
+.contact {
+	width: 60%;
+}
+form dt {
+	margin-bottom: 15px;
+	font-size: 4vw;
+}
+form dd {
+	margin-bottom: 30px;
+}
+input, textarea {
+	font-size: 3vw;
+}
+.send_btn {
+  margin-top: 50px;
+}
+.send_btn input {
+	font-size: 4vw;
+}
+
+/* footer */
+footer {
+	padding: 100px 50px 20px;
+}
+.foot_nav {
+	margin-bottom: 20px;
+	font-size: 5vw;
+	line-height: 1.8;
+}
+.to_top {
+	bottom: 70px;
+	right: 50px;
+}
