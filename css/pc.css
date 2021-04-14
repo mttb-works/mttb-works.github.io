@@ -18,8 +18,8 @@ h2 {
 /* hamburgerNAVI */
 .global_nav {
 	width: auto;
-  padding: 0;
-	background: transparent;
+  padding: 5px;
+	background: rgba(255, 255, 255, 0.8);
 	position: fixed;
   top: auto;
   bottom: 70px;
@@ -105,10 +105,11 @@ h2 {
 }
 .works_img {
 	filter: grayscale(1);
-	transition: 0.3s;
+	transition: 0.5s;
 }
 .works_anm:hover {
 	filter: grayscale(0);
+	transform: scale(1.05);
 } 
 .works_inner p:last-child {
 	font-size: 0.7em;

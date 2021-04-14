@@ -56,27 +56,6 @@ function handle(mm) {
 				}, speed, "swing");
 				return false;
 			});
-			ScrollReveal().reveal('.fade_01', {
-				duration: 1000,
-				delay: 100,
-				origin: 'bottom',
-				distance: '80px',
-				easing: 'ease',
-			});
-			ScrollReveal().reveal('.fade_02', {
-				duration: 1000,
-				delay: 200,
-				origin: 'bottom',
-				distance: '80px',
-				easing: 'ease',
-			});
-			ScrollReveal().reveal('.fade_03', {
-				duration: 1000,
-				delay: 300,
-				origin: 'bottom',
-				distance: '80px',
-				easing: 'ease',
-			});
 			var navEnd = $('.nav_end').offset().top;
 			var distance = 0;
 			$(document).scroll(function () {
