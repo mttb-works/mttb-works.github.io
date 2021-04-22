@@ -5,63 +5,91 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="ARAI YUTAKAのポートフォリオサイトのバナー作品紹介ページです。">
-  <title>YUTAKA ARAI PORT FOLIO｜WORKS｜バナーMotors</title>
+  <meta name="description" content="ARAI YUTAKAのポートフォリオサイトのショップカード作品紹介ページです。">
+  <title>YUTAKA ARAI PORT FOLIO｜WORKS｜SHOPCARD</title>
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="works.css">
+  <link rel="stylesheet" href="modal.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div class="wrap">
-    <header>
-      <div class="title lato">
-        <p>WEB CREATE</p>
-        <h1>
-          <a href="../index.html">
-            YUTAKA ARAI<br>
-            <span class="thin"><span class="first_letter">/ </span>PORT FOLIO</span>
-          </a>
-        </h1>
+  <header>
+    <div class="title lato">
+      <p>WEB CREATE</p>
+      <h1>
+        <a href="../index.html">
+          YUTAKA ARAI<br>
+          <span class="thin"><span class="first_letter">/ </span>PORT FOLIO</span>
+        </a>
+      </h1>
+    </div>
+  </header>
+  <main>
+    <div class="column_l">
+      <div class="works_imgs">
+        <img class="img_03" src="../images/works_03.jpg" alt="ショップカード作品">
       </div>
-    </header>
-    <main>
-      <div class="column_l">
-        <div class="works_imgs">
-          <img class="img_03" src="../images/works_03banner.jpg" alt="バナー_Motors">
-        </div>
-        <h2 class="works_title">
-          整備工場バナー制作
-        </h2>
-      </div>
-      <div class="column_r">
-        <div class="works_info">
-          <p>自動車修理工場のホームページ用<br>
-            TOPページバナー作成<br>
-            デザイン、レイアウト、画像加工</p>
-          <ul>
-            <li><span class="first_letter">/ </span>幅広い年代の男性がターゲット</li>
-            <li><span class="first_letter">/ </span>長年の経営での強みや信頼、自信やプライドを伝えたい</li>
-            <li><span class="first_letter">/ </span>シンプルかつスタイリッシュに表現</li>
-          </ul>
-          <h3>使用ツール</h3>
-          <p>Photoshop</p>
-        </div>
-        <div class="page_btn lato">
-          <div class="prev_btn">
-            <a class="under_line" href="works_02.html">&lt;&lt; PREV</a>
-          </div>
-          <div class="next_btn">
-            <a class="under_line" href="works_04.html">NEXT &gt;&gt;</a>
+      <h2 class="works_title">
+        <a id="openModal" class="under_line">
+          ショップカード・名刺・フライヤー制作 <img class="window" src="../images/file.png" alt="別ファイル">
+        </a>
+      </h2>
+      <div id="modalArea" class="modalArea">
+        <div id="modalBg" class="modalBg"></div>
+        <div class="modalWrapper">
+          <div class="modalContents">
+            <div class="modal_imgs">
+              <img src="../images/mustache_shopcard.jpg" alt="マスタッシュショップカード">
+              <img src="../images/mustache_businesscard.jpg" alt="マスタッシュ名刺">
+              <img src="../images/mustache_flyer.jpg" alt="マスタッシュフライヤー">
+            </div>
           </div>
         </div>
-        <div class="return_btn lato">
-          <a href="index.html#works_03">Return ...</a>
+        <div id="closeModal" class="closeModal">
+          ×
         </div>
       </div>
-    </main>
-  </div>
+    </div>
+    <div class="column_r">
+      <div class="works_info">
+        <p>クライアントのイメージやコンセプト、<br>
+          必要情報など打ち合わせを重ねながら<br>
+          デザイン、作成</p>
+        <ul>
+          <li><span class="first_letter">/ </span>男女問わず幅広い年代をターゲットに</li>
+          <li><span class="first_letter">/ </span>親しみ易さと高級感をバランス良く</li>
+          <li><span class="first_letter">/ </span>フライヤー掲載のイベントは架空</li>
+        </ul>
+        <h3>使用ツール</h3>
+        <p>Photoshop / Illustrator</p>
+      </div>
+      <div class="page_btn lato">
+        <div class="prev_btn">
+          <a class="under_line" href="works_02.html">&lt;&lt; PREV</a>
+        </div>
+        <div class="next_btn">
+          <a class="under_line" href="works_04.html">NEXT &gt;&gt;</a>
+        </div>
+      </div>
+      <div class="return_btn lato">
+        <a href="index.html#works_03">Return ...</a>
+      </div>
+    </div>
+  </main>
+  <script>
+    $(function () {
+      $('#openModal').click(function () {
+        $('#modalArea').fadeIn();
+      });
+      $('#closeModal , #modalBg').click(function () {
+        $('#modalArea').fadeOut();
+      });
+    });
+  </script>
 </body>
 
 </html>
